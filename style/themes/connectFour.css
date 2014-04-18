@@ -1,0 +1,129 @@
+/* themed to look like the classic game of connect four */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Play:400,700);
+
+html, body {
+margin: 0;
+padding: 0;
+background: #faf8ef;
+color: #0D245B;
+font-family: 'Play', sans-serif;
+font-size: 18px;
+}
+
+body {
+margin: 40px 0;
+}
+
+h1 {
+  font-family: 'Play', sans-serif;
+}
+
+.game-container {
+  background: #e0e251;
+  border-radius: 22px;
+}
+.grid-cell {
+width: 106.25px;
+height: 106.25px;
+margin-right: 15px;
+float: left;
+border-radius: 54px;
+background: rgba(238, 228, 218, 0.8);
+}
+.tile .tile-inner {
+border-radius: 54px;
+text-align: center;
+font-weight: bold;
+z-index: 10;
+font-size: 55px;
+}
+
+.tile.tile-2 .tile-inner {
+background: #202020;
+box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+color: white;
+}
+
+.tile.tile-4 .tile-inner {
+background: #404040;
+box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+color: white;
+}
+
+.tile.tile-8 .tile-inner {
+background: #808080;
+color: white;
+}
+
+.tile.tile-16 .tile-inner {
+color: #f9f6f2;
+background: #E2746E;
+}
+
+.tile.tile-32 .tile-inner {
+color: #f9f6f2;
+background: #E25851;
+}
+
+.tile.tile-64 .tile-inner {
+color: #f9f6f2;
+background: #9C423E;
+}
+
+.tile.tile-128 .tile-inner {
+color: #f9f6f2;
+background: #87140E;
+box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+font-size: 45px;
+}
+
+.restart-button {
+display: inline-block;
+background: #27458A;
+border-radius: 3px;
+padding: 0 20px;
+text-decoration: none;
+color: #f9f6f2;
+height: 40px;
+line-height: 42px;
+display: block;
+text-align: center;
+float: right;
+}
+
+@media screen and (max-width: 520px)
+.game-container {
+margin-top: 17px;
+position: relative;
+padding: 10px;
+cursor: default;
+-webkit-touch-callout: none;
+-ms-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-ms-touch-action: none;
+touch-action: none;
+background: #bbada0;
+border-radius: 12px;
+width: 280px;
+height: 280px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+@media screen and (max-width: 520px)
+.grid-cell {
+width: 57.5px;
+height: 57.5px;
+margin-right: 10px;
+float: left;
+border-radius: 3px;
+background: rgba(238, 228, 218, 0.35);
+}
+
+@media screen and (max-width: 520px)
+.grid-row {
+margin-bottom: 10px;
+}
